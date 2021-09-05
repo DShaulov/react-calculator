@@ -1,107 +1,117 @@
 import Display from './components/Display';
 import Button from './components/Button';
+import calculate from './logic/calculate';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [calculation, setCalculation] = useState('');
+  const updateCalculation = (update) => {
+    if (calculation ==='0') {
+      setCalculation(update);
+    }
+    let new_calculation = calculation.concat(update);
+    setCalculation(new_calculation);
+  }
   return (
     <div className="App">
       <Display/>
       <table className="calculator">
       <tr>
         <td>
-          <Button type="π"/>
+          <Button clickHandler={calculate} type="π" />
         </td>
         <td>
-          <Button type="e"/>
+          <Button clickHandler={calculate}type="e"/>
         </td>
         <td>
-          <Button type="c"/>
+          <Button clickHandler={calculate}type="c"/>
         </td>
         <td>
-          <Button type="del"/>
+          <Button clickHandler={calculate}type="del"/>
         </td>
       </tr>
       <tr>
         <td>
-          <Button type="1/x"/>
+          <Button clickHandler={calculate}type="1/x"/>
         </td>
         <td>
-          <Button type="|x|"/>
+          <Button clickHandler={calculate}type="|x|"/>
         </td>
         <td>
-          <Button type="exp"/>
+          <Button clickHandler={calculate}type="exp"/>
         </td>
         <td>
-          <Button type="mod"/>
+          <Button clickHandler={calculate}type="mod"/>
         </td>
       </tr>
       <tr>
           <td>
-            <Button type="("/>
+            <Button clickHandler={calculate}type="("/>
           </td>
           <td>
-            <Button type=")"/>
+            <Button clickHandler={calculate}type=")"/>
           </td>
           <td>
-            <Button type="n!"/>
+            <Button clickHandler={calculate}type="n!"/>
           </td>
           <td>
-            <Button type="/"/>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <Button type="7"/>
-          </td>
-          <td>
-            <Button type="8"/>
-          </td>
-          <td>
-            <Button type="9"/>
-          </td>
-          <td>
-            <Button type="x"/>
+            <Button clickHandler={calculate}type="/"/>
           </td>
         </tr>
         <tr>
           <td>
-            <Button type="4"/>
+            <Button clickHandler={calculate}type="7"/>
           </td>
           <td>
-            <Button type="5"/>
+            <Button clickHandler={calculate}type="8"/>
           </td>
           <td>
-            <Button type="6"/>
+            <Button clickHandler={calculate}type="9"/>
           </td>
           <td>
-            <Button type="-"/>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <Button type="1"/>
-          </td>
-          <td>
-            <Button type="2"/>
-          </td>
-          <td>
-            <Button type="3"/>
-          </td>
-          <td>
-            <Button type="+"/>
+            <Button clickHandler={calculate}type="x"/>
           </td>
         </tr>
         <tr>
           <td>
+            <Button clickHandler={calculate}type="4"/>
           </td>
           <td>
-            <Button type="0"/>
+            <Button clickHandler={calculate}type="5"/>
           </td>
           <td>
-            <Button type="."/>
+            <Button clickHandler={calculate}type="6"/>
           </td>
           <td>
-            <Button type="="/>
+            <Button clickHandler={calculate}type="-"/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <Button clickHandler={calculate}type="1"/>
+          </td>
+          <td>
+            <Button clickHandler={calculate}type="2"/>
+          </td>
+          <td>
+            <Button clickHandler={calculate}type="3"/>
+          </td>
+          <td>
+            <Button clickHandler={calculate}type="+"/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+          </td>
+          <td>
+            <Button clickHandler={calculate}type="0"/>
+          </td>
+          <td>
+            <Button clickHandler={calculate}type="."/>
+          </td>
+          <td>
+            <Button clickHandler={calculate}type="="/>
           </td>
         </tr>
       </table>
