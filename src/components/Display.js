@@ -1,5 +1,7 @@
 function Display(props) {
     return (
-        <div>Display</div>
+        <div className="calculator__display">Display</div>
     )
 }
+
+export default Display;
