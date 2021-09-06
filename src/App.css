@@ -1,6 +1,7 @@
 .App {
   width: auto;
   margin: auto;
+  margin-top: 10%;
 }
 
 .calculator {
@@ -8,18 +9,4 @@
   width: 40%;
   margin: auto;
   border: 5px solid black;
-}
-
-.calculator__button {
-  width: 85%;
-}
-
-.calculator__display {
-  text-align: center;
-  width: 40%;
-  margin: auto;
-  border: 2px solid black;
-}
-.calculator__display__td {
-  column-span: all;
 }

@@ -1,9 +1,8 @@
-import { useState } from 'react';
+import './Display.css';
 
 function Display(props) {
-    const [display, setDisplay] = useState(0);
     return (
-        <div className="calculator__display">{display}</div>
+        <div className="calculator__display">{props.calculation}</div>
     )
 }
 
