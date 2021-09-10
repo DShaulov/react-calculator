@@ -7,3 +7,7 @@
   .calculator__display__td {
     column-span: all;
   }
+  
+  .calculator__display__previous-calculation{
+    text-align: left;
+  }
