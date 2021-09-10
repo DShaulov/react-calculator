@@ -1,4 +1,11 @@
-.calculator__button {
-    width: 85%;
-    box-shadow: 1px 2px;
-  }
+.calculator__button__number {
+  width: 85%;
+  box-shadow: 1px 1px;
+  border-radius: 10px;
+}
+.calculator__button__non-number {
+  width: 85%;
+  box-shadow: 1px 1px;
+  border-radius: 10px;
+  background-color: orange;
+}

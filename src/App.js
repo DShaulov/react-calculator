@@ -40,71 +40,71 @@ function App() {
         <tbody>
           <tr>
             <td>
-              <Button clickHandler={updateCalculation}type="AC"/>
+              <Button className="calculator__button__non-number" clickHandler={updateCalculation}type="AC"/>
             </td>
             <td>
-              <Button clickHandler={updateCalculation}type="+/-"/>
+              <Button className="calculator__button__non-number" clickHandler={updateCalculation}type="+/-"/>
             </td>
             <td>
-              <Button clickHandler={updateCalculation}type="%"/>
+              <Button className="calculator__button__non-number" clickHandler={updateCalculation}type="%"/>
             </td>
             <td>
-              <Button clickHandler={updateCalculation}type="/"/>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <Button clickHandler={updateCalculation}type="7"/>
-            </td>
-            <td>
-              <Button clickHandler={updateCalculation}type="8"/>
-            </td>
-            <td>
-              <Button clickHandler={updateCalculation}type="9"/>
-            </td>
-            <td>
-              <Button clickHandler={updateCalculation}type="x"/>
+              <Button className="calculator__button__non-number" clickHandler={updateCalculation}type="/"/>
             </td>
           </tr>
           <tr>
             <td>
-              <Button clickHandler={updateCalculation}type="4"/>
+              <Button className="calculator__button__number" clickHandler={updateCalculation}type="7"/>
             </td>
             <td>
-              <Button clickHandler={updateCalculation}type="5"/>
+              <Button className="calculator__button__number" clickHandler={updateCalculation}type="8"/>
             </td>
             <td>
-              <Button clickHandler={updateCalculation}type="6"/>
+              <Button className="calculator__button__number" clickHandler={updateCalculation}type="9"/>
             </td>
             <td>
-              <Button clickHandler={updateCalculation}type="-"/>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <Button clickHandler={updateCalculation}type="1"/>
-            </td>
-            <td>
-              <Button clickHandler={updateCalculation}type="2"/>
-            </td>
-            <td>
-              <Button clickHandler={updateCalculation}type="3"/>
-            </td>
-            <td>
-              <Button clickHandler={updateCalculation}type="+"/>
+              <Button className="calculator__button__non-number" clickHandler={updateCalculation}type="x"/>
             </td>
           </tr>
           <tr>
             <td>
+              <Button className="calculator__button__number" clickHandler={updateCalculation}type="4"/>
             </td>
             <td>
-              <Button clickHandler={updateCalculation}type="0"/>
+              <Button className="calculator__button__number" clickHandler={updateCalculation}type="5"/>
             </td>
             <td>
-              <Button clickHandler={updateCalculation}type="."/>
+              <Button className="calculator__button__number" clickHandler={updateCalculation}type="6"/>
             </td>
             <td>
-              <Button clickHandler={updateCalculation}type="="/>
+              <Button className="calculator__button__non-number" clickHandler={updateCalculation}type="-"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <Button className="calculator__button__number" clickHandler={updateCalculation}type="1"/>
+            </td>
+            <td>
+              <Button className="calculator__button__number" clickHandler={updateCalculation}type="2"/>
+            </td>
+            <td>
+              <Button className="calculator__button__number" clickHandler={updateCalculation}type="3"/>
+            </td>
+            <td>
+              <Button className="calculator__button__non-number" clickHandler={updateCalculation}type="+"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            </td>
+            <td>
+              <Button className="calculator__button__number" clickHandler={updateCalculation}type="0"/>
+            </td>
+            <td>
+              <Button className="calculator__button__number" clickHandler={updateCalculation}type="."/>
+            </td>
+            <td>
+              <Button className="calculator__button__non-number" clickHandler={updateCalculation}type="="/>
             </td>
           </tr>
         </tbody>
